@@ -18,6 +18,9 @@ async def scrape(playwright: Playwright, url=TARGET_URL):
         print('Connected! Starting inspect session...')
         page = await browser.new_page()
         client = await page.context.new_cdp_session(page)
+        debug_info = await client.send('Unblocker.getDebugInfo')
+        session_id = debug_info["connectionId"]
+        print(f'Current SBR session: {session_id}')
         frames = await client.send('Page.getFrameTree')
         frame_id = frames['frameTree']['frame']['id']
         inspect = await client.send('Page.inspect', {
