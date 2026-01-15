@@ -5,8 +5,8 @@ sbr-examples
 
 - *-basic: 대상 페이지를 간단히 스クレイピング
 - *-captcha: 페이지를 열고 CAPTCHA가 해결될 때까지 대기
-- *-advanced: スクレイピング 세션 검사, js 스니펫을 사용한 고급 スクレイピング
-- *-proxy-location: スクレイピング 전에 プロキシ 위치 변경
+- *-advanced: 스크레이핑 세션 검사, js 스니펫을 사용한 고급 스크레이핑
+- *-proxy-location: 스크레이핑 전에 프록시 위치 변경
 - *-file-download: 브라우저의 다운로드 가져오기
 
 How to run examples
